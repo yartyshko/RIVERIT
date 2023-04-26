@@ -1,0 +1,196 @@
+@media (max-width: 1230.98px) {
+    .header__menu {
+        width: 80%;
+    }
+    .header-menu__link {
+        padding: 20px 12px;
+    }
+    .header-menu__item {
+        margin-right: 3px;
+    }
+}
+@media (max-width: 1066.98px) {
+    body {
+        padding-top: 80px;
+    }
+    .container {
+        max-width: 664px;
+    }
+    .content__title {
+        padding: 154px 0 57px;
+    }
+    .section--md6 {
+        width: 100%;
+    }
+    .md6--dn {
+        display: none;
+    }
+    .section--md6:nth-child(odd) {
+        padding-right: 0;
+    }
+    .section--md6:nth-child(even) {
+        padding-left: 0;
+    }
+    .header {
+        background: none;
+    }
+    .header.darkHeader {
+        background-color: var(--secondaryColor);
+    }
+    .header__body {
+        height: 80px;
+        justify-content: center;
+    }
+    .header__burger {
+        display: flex;
+    }
+    .header__logo {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .header__menu {
+        display: none;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--secondaryColor);
+        width: 100%;
+        top: 0;
+        left: -200vw;
+        padding: 108px 10px 30px;
+        height: 100vh;
+        overflow-y: auto;
+        transition: left 0.2s ease;
+        font-size: 59px;
+        letter-spacing: normal;
+    }
+    .header__menu.active {
+        left: 0;
+    }
+    .header__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-menu__item {
+        margin-right: 0;
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-menu__item:last-child {
+        margin-left: 0;
+    }
+    .header-menu__icon-drop {
+        display: none;
+    }
+    .header-menu__link:hover,
+    .header-menu__item--drop:hover .header-menu__link {
+        background: none;
+    }
+    .header-menu__item--drop.active-mobyle .header-menu__text-drop::before{
+        display: block;
+    }
+    .header-menu__item--drop .header-menu__link{
+        position: relative;
+    }
+    .header-menu__item--drop .header-menu__link::before{
+        content: '';
+        position: absolute;
+        right: -65px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 45px;
+        height: 1.33px;
+        background-color: var(--defaultTextColor);
+    }
+    .header-menu__item--drop .header-menu__link::after {
+        content: '';
+        position: absolute;
+        right: -44px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.33px;
+        height: 45px;
+        background-color: var(--defaultTextColor);
+    }
+    .header-menu__item--drop.active-mobyle .header-menu__link::after {
+        opacity: 0;
+    }
+    .header-menu__drop {
+        display: none;
+        position: static;
+        min-width: auto;
+        background: none;
+        flex-direction: column;
+        border: none;
+        top: auto;
+        left: auto;
+        text-align: center;
+        padding: 26px 0 7px;
+    }
+    .header-menu__item--drop.active-mobyle .header-menu__drop {
+        display: block;
+    }
+    .header-menu__drop-item:not(:first-child) {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .header-menu__drop-title {
+        font-size: 32px;
+        letter-spacing: normal;
+    }
+    .header-menu__drop-list {
+        font-size: 26px;
+    }
+    .header-menu__drop-list-item {
+        margin-bottom: 22px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .header__menu {
+        font-size: 30px;
+        padding-top: 85px;
+    }
+    .header-menu__item {
+        margin-bottom: 5px;
+    }
+    .header-menu__item--drop .header-menu__link::before {
+        right: -53px;
+        width: 20px;
+    }
+    .header-menu__item--drop .header-menu__link::after {
+        height: 20px;
+    }
+    .header-menu__drop-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .header-menu__drop-list {
+        font-size: 18px;
+    }
+    .btn--lg {
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+    .content__title {
+        padding: 100px 0 40px;
+    }
+    .modal__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .holder-input__input {
+        height: 40px;
+    }
+    .modal__content {
+        padding: 50px 30px 30px;
+    }
+    .btn--md {
+        padding: 12px;
+    }
+    .select-img__item {
+        min-height: 90px;
+    }
+}

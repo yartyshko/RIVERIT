@@ -1,0 +1,92 @@
+:root {
+    --defaultTextColor: #665822;
+    --defaultTextColorOpacity: #bcb69e;
+    --secondaryColor: #e1c34b;
+    --bgBody: #ffdc55;
+    --whiteColor: #fff;
+    --redColor: #ff0000;
+    --bgAccordionHeader: #a48E37;
+    --bgHoverCard: #feeda9;
+
+    /* tipografy */
+    --fotnFamily: 'Roboto', sans-serif;
+    --defaultFontSize: 16px;
+    --defaultLineHeight: 112.5%;
+}
+
+body {
+    font-family: var(--fotnFamily);
+    font-weight: 400;
+    font-size: var(--defaultFontSize);
+    line-height: var(--defaultLineHeight);
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: var(--defaultTextColor);
+    background-color: var(--bgBody);
+    padding-top: 106px;
+}
+
+body.lock {
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background-color: var(--bgHoverCard);
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: var(--defaultTextColor);
+    border-radius: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 120%;
+    font-weight: normal;
+}
+
+.input,
+.textarea {
+    padding: 10px 0;
+    font-size:  var(--defaultFontSize);
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid #BABDDB;
+}
+input,
+button,
+textarea {
+    font-family: var(--fotnFamily);
+}
+.btn:hover {
+    opacity: .8;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+.header-fixed {
+    padding-top: 69px;
+}
+.content {
+    flex: auto;
+}
+.container {
+    max-width: 1384px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
